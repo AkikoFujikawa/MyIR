@@ -12,7 +12,7 @@ if (hour < 12) {
     greeting = "こんばんは！";
 }
 
-alert(greeting + "Akikoのページへようこそ");
+alert(greeting + "MyIR AkikoFujikawaへようこそ");
 
 const btn = document.getElementById('myBtn');
 const message = document.getElementById('message');
@@ -21,7 +21,7 @@ const message = document.getElementById('message');
 // クリックするたびに文字が変わる
 btn.addEventListener('click', function() {
     if (message.textContent === '') {
-        message.textContent = 'thank you for contacting me!';
+        message.textContent = 'thank you for coming to my page!';  // 1回目は表示される
     } else {
         message.textContent = '';  // 2回目は消える
     }
