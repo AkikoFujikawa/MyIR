@@ -59,11 +59,22 @@ h1 {
     text-indent: -5em;       /* 1文字目を左に引き戻す */
 }
 
-h2 {
+
+h2,p{
     text-align: center;
     color: var(--text-color);
     margin-top: 5px;
     margin-bottom: 2px;
+}
+
+    .profile-center {
+    text-align: center;
+}
+.name-jp, .name-myanmar {
+    text-align: center;
+    font-weight: bold;  /* 太字にする */
+    font-size: 1.2rem;  /* h2より少し小さめ */
+    margin: 4px 0;
 }
     .profile-list {
     font-size: large;
@@ -98,7 +109,13 @@ h2 {
     border-radius: 15px;     /* 角を丸く */
     box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* ほんのり影をつける */
 }
-    
+
+.section-box h3 {
+    text-align: center;  /* h3中央 */
+}
+.section-box p {
+    text-align: left;  /* 箱の中の文字を左寄せ */
+}
 
 
 /* 1. 通常時のリンクの色 */
