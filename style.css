@@ -1,0 +1,169 @@
+:root {
+    --text-color: #4a4a4a;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300; /* 太さを変える */
+    color: var(--text-color);
+    background: linear-gradient(
+        to bottom,
+        #7fb3be 0%,
+        #a8b8bc 40%,
+        #c4a99a 100%
+    );
+    min-height: 100vh;
+    margin: 0;
+}
+header {
+    text-align: center;
+    }
+
+/* ふわっとフェードイン */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+/*    └透明      └20px下にある（開始時） */
+    to   { opacity: 1; transform: translateY(0);    }
+/*    └不透明    └元の位置に戻る（終了時） */
+}
+
+h1 { animation: fadeIn 1s ease; }
+.profile-image img { animation: fadeIn 1.2s ease; }
+.section-box { animation: fadeIn 1.5s ease; }
+
+h1 {
+    color: var;
+    display: inline-block;     /* 文字の幅に合わせる */
+    background-color:rgba(255, 255, 255, 0.4);   /* 文字の後ろだけ別色 */
+    padding: 4px 16px;         /* 余白 */
+    border-radius: 6px;        /* 角を少し丸く */    
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+ .profile-image img {
+    width: 500px;  /* サイズダウン */
+    height: 300px; 
+    border-radius: 40px; /* 数字を大きくするほど丸みが強く */
+    object-fit: cover;
+    display: block;   
+    margin: 0 auto;  
+    margin-top: 80px;    /* 画像の上の余白 */
+    margin-bottom: 30px;  /* 画像の下の余白 */
+}
+ .profile-list li {
+    margin: 10px 0;
+    font-size: large;
+    padding-left: 5em;       /* 左に余白 */
+    text-indent: -5em;       /* 1文字目を左に引き戻す */
+}
+
+
+h2,p{
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+    .profile-center {
+    text-align: center;
+}
+.name-jp, .name-myanmar {
+    text-align: center;
+    font-weight: bold;  /* 太字にする */
+    font-size: 1.2rem;  /* h2より少し小さめ */
+    margin: 4px 0;
+}
+    .profile-list {
+    font-size: large;
+    text-align: left; /* 文字を左揃え */
+    list-style: none; /* ●を消す */
+    padding: 0;
+    display: inline-block; /* リスト全体を中央に置きつつ左揃え */
+}
+    .profile-list li {
+    margin: 10px 0; /* 上下の余白 */
+    font-size: 18px;
+}
+
+/* 3つの箱を包んでいる親要素への指示 */
+.h-container {
+    display: flex;           /* 横並びにする */
+    justify-content: center; /* 3つの箱を画面の真ん中に寄せる */
+     align-items: stretch; /* 箱の高さを揃える */
+    gap: 40px;               /* 箱と箱の間隔 */
+    padding: 40px;           /* 全体の周りに余白を作る */
+    font-size: large;
+    text-align: left; /* 文字を左揃え */
+}
+
+/* 3つの箱（子要素）への共通指示 */
+.section-box {
+    flex: 1;                 /* 3つの箱の幅を均等にする */
+    max-width: 400px;        /* 箱が広がりすぎないように制限 */
+    
+    /* スタイリッシュに見せるための装飾（お好みで！） */
+    background-color: rgba(255, 255, 255, 0.4); /* 半透明の白で文字を読みやすく */
+    padding: 20px;
+    border-radius: 15px;     /* 角を丸く */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* ほんのり影をつける */
+}
+
+.section-box h3 {
+    text-align: center;  /* h3中央 */
+}
+.section-box p {
+    text-align: left;  /* 箱の中の文字を左寄せ */
+}
+
+
+/* 1. 通常時のリンクの色 */
+a {
+    color: #555; /* スタイリッシュな濃いグレー */
+    transition: 0.3s; /* 色がふわっと変わるようにします */
+}
+
+/* 2. マウスを乗せた時（ホバー） */
+a:hover {
+    color: #aaa; /* 少し明るくして「触った感」を出します */
+}
+
+/* 3. 【本題】クリックした瞬間（アクティブ） */
+a:active {
+    color: darkolivegreen; /* クリックした瞬間にオリーブ色 */
+    font-weight: bold; /* 少し太くすると「押した！」感じが出ます */
+}
+
+
+
+#myBtn {
+    background-color: rgba(255, 255, 255, 0.4);  /* 半透明の白 */
+    text-align: center;
+    color: #4a4a4a;
+    border: none;           /* 枠線を消す */
+    padding: 10px 24px;     /* 余白 */
+    border-radius: 20px;    /* 角を丸く */
+    font-size: xx-large;
+    cursor: pointer;        /* マウスを乗せると指マークに */
+    transition: 0.3s;       /* ふわっと変化 */
+}
+
+#myBtn:hover {
+    background-color: rgba(255, 255, 255, 0.7);  /* ホバーで少し白く */
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    flex: 1;
+    max-width: 400px;
+}
+.card-link .section-box {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.card-link:hover .section-box {
+    transform: translateY(-4px);
+    background-color: rgba(255,255,255,0.6);
+}
