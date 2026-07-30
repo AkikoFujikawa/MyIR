@@ -2,16 +2,19 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>未来 | MyIR AkikoFujikawa</title>
+  <title>未来 | MyIR Akiko Fujikawa</title>
   <link rel="stylesheet" href="style.css">
+
   <style>
     .page-hero {
       text-align: center;
       padding: 60px 20px 20px;
     }
+
     .page-hero h1 {
       margin-bottom: 10px;
     }
+
     .page-hero .catch {
       font-size: 1rem;
       color: var(--text-color);
@@ -20,7 +23,7 @@
     }
 
     .future-section {
-      max-width: 700px;
+      max-width: 760px;
       margin: 0 auto;
       padding: 20px 40px 60px;
     }
@@ -28,15 +31,22 @@
     .future-box {
       background-color: rgba(255,255,255,0.4);
       border-radius: 15px;
-      padding: 28px 32px;
+      padding: 28px 36px;
       margin-bottom: 28px;
       line-height: 1.9;
       font-size: 1rem;
       animation: fadeIn 1s ease;
+      text-align: left;
     }
+
     .future-box h3 {
       text-align: center;
+      margin-top: 0;
       margin-bottom: 16px;
+    }
+
+    .future-box p {
+      margin: 0;
     }
 
     .keyword {
@@ -49,13 +59,17 @@
       margin-bottom: 28px;
       animation: fadeIn 1.1s ease;
       letter-spacing: 0.05em;
+      line-height: 1.7;
     }
 
-    .back-link {
-      text-align: center;
+    .nav-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding-bottom: 40px;
     }
-    .back-link a {
+
+    .nav-links a {
       background-color: rgba(255,255,255,0.4);
       padding: 10px 28px;
       border-radius: 20px;
@@ -64,55 +78,103 @@
       color: var(--text-color);
       transition: 0.3s;
     }
-    .back-link a:hover {
+
+    .nav-links a:hover {
       background-color: rgba(255,255,255,0.7);
     }
-    .nav-links {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 40px;
-}
-.nav-links a {
-  background-color: rgba(255,255,255,0.4);
-  padding: 10px 28px;
-  border-radius: 20px;
-  font-size: 1rem;
-  text-decoration: none;
-  color: var(--text-color);
-  transition: 0.3s;
-}
-.nav-links a:hover {
-  background-color: rgba(255,255,255,0.7);
-}
+
+    @media (max-width: 700px) {
+      .future-section {
+        padding: 20px 20px 50px;
+      }
+
+      .future-box {
+        padding: 24px 24px;
+      }
+
+      .keyword {
+        font-size: 1.15rem;
+        padding: 18px;
+      }
+
+      .nav-links {
+        gap: 10px;
+      }
+
+      .nav-links a {
+        padding: 9px 16px;
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
+
 <body>
 
   <div class="page-hero">
-    <h1>私が大切にしたいこと</h1>
-    <p class="catch">心が元気な働き方へ</p>
+    <h1>これから目指すこと</h1>
+    <p class="catch">
+      経験と学びをつなぎ、自分らしく続けられる働き方へ。
+    </p>
   </div>
 
   <div class="future-section">
 
     <div class="keyword">
-      タイパ・コスパより、<br>メンパ（メンタルパフォーマンス）を。
+  人を支える経験に、<br>
+  デジタルで仕組みをつくる力を。
     </div>
 
     <div class="future-box">
+      <h3>新しい学び</h3>
+
       <p>
-        これまで、さまざまな職場で一生懸命働いてきました。<br>
-        でも、気づいたら心が疲れていた時期もありました。<br><br>
-        ワクワクできて、誰かの役に立てて、人とつながれる。<br>
-そんな仕事が、自分を一番動かしてくれると気づきました。<br><br>
-これからは、<strong>心が躍る方へ</strong>。自分らしく追いかけていきます。
+        現在は、プログラミングやWeb制作について学んでいます。
+        分からないことに向き合い、
+        一つずつ調べて形にしていく過程に、
+        新しい可能性を感じています。<br><br>
+
+        年齢やこれまでの職種にとらわれず、
+        学び続けることを大切にしていきたいと考えています。
+      </p>
+    </div>
+
+    <div class="future-box">
+      <h3>これまでの経験を活かして</h3>
+
+      <p>
+  これまでの仕事では、
+  相手の話を聞き、状況を整理し、
+  必要な人や情報につなぐ役割を担ってきました。<br><br>
+
+  これからは、そうした経験とWeb開発の学びを組み合わせ、
+  人の困りごとを分かりやすく整理し、
+  より使いやすい仕組みやサービスをつくることに
+  挑戦したいと思っています。
+</p>
+    </div>
+
+    <div class="future-box">
+      <h3>目指す働き方</h3>
+
+      <p>
+        場所や年齢に縛られず、
+        自分の経験を活かしながら続けられる働き方を
+        目指しています。<br><br>
+
+        効率だけを求めるのではなく、
+        誰かの役に立っていると感じられること、
+        人とのつながりを大切にできること、
+        そして自分自身も前向きでいられること。<br><br>
+
+        そんな働き方を、一歩ずつ形にしていきます。
       </p>
     </div>
 
     <div class="nav-links">
-  <a href="work.html">← 現在</a>
-  <a href="index.html">MyIR Top →</a>
-</div>
+      <a href="work.html">← 現在</a>
+      <a href="index.html">MyIR Top →</a>
+    </div>
 
   </div>
 
